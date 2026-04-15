@@ -78,7 +78,7 @@ export default function BlogPost() {
             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: '#fff' }}>How Much Does Pool Removal Cost in Mesa?</h2>
             <p style={{ marginBottom: '1.5rem', color: '#cbd5e1' }}>While national averages vary wildly, you can expect an Arizona removal project to land strictly between <strong>$7,500 to $26,000</strong>.</p>
             <p style={{ color: '#cbd5e1', marginBottom: '1.5rem' }}>Why the huge gap? Factors like concrete thickness, access width, and geotechnical soil demands drastically impact real-world contractor pricing.</p>
-            <Link href="/cost" className="btn btn-primary">See full breakdown → /cost/mesa-pool-removal</Link>
+            <Link href="/cost/mesa-pool-removal" className="btn btn-primary">See the full cost breakdown →</Link>
           </div>
 
           {/* 5. PERMITS & REGULATIONS */}

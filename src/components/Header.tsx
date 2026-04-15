@@ -15,6 +15,7 @@ export default function Header() {
         </Link>
         <nav className="header-nav">
           <Link href="/pool-removal" style={{ color: '#d1d5db', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.85rem' }}>Services</Link>
+          <Link href="/service-areas" style={{ color: '#d1d5db', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.85rem' }}>Service Areas</Link>
           <Link href="/cost/mesa-pool-removal" style={{ color: '#d1d5db', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.85rem' }}>Cost Guide</Link>
           <Link href="/blog/mesa-pool-removal-guide-2026" style={{ color: '#d1d5db', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.85rem' }}>Authority Blog</Link>
           <Link href="/contact" className="btn btn-primary" style={{ padding: '0.75rem 1.5rem', fontSize: '0.85rem' }}>Get Estimate</Link>

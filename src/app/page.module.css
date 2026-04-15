@@ -58,8 +58,8 @@
   grid-template-columns: 3fr 2fr;
   align-items: center;
   gap: 4rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
 
 .heroTitle {
@@ -109,6 +109,9 @@
   border-top: 8px solid var(--accent-primary);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
   color: var(--text-main);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .calcTitle {
@@ -376,8 +379,23 @@
   .heroGrid {
     display: flex;
     flex-direction: column-reverse;
-    gap: 4rem;
-    padding-top: 6rem;
+    gap: 3rem;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .heroTitle {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+  .heroDesc {
+    margin: 0 auto 2.5rem auto;
+    border-left: none;
+    border-top: 4px solid var(--accent-primary);
+    padding: 1.5rem 0 0 0;
+  }
+  .trustBullets {
+    display: inline-block;
+    text-align: left;
   }
   .splitLayout {
     display: flex;
@@ -388,13 +406,22 @@
 
 @media (max-width: 768px) {
   .heroTitle {
-    font-size: clamp(2rem, 10vw, 2.75rem);
+    font-size: 2.25rem;
     line-height: 1.1;
   }
   .section {
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
   .calculatorBox {
     padding: 1.5rem;
+  }
+  .heroGrid {
+    padding-top: 80px;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .costPrice {
+    font-size: 2.5rem;
   }
 }

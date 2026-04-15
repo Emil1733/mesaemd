@@ -6,9 +6,9 @@ export default function LocalBusinessSchema() {
     "@type": "HomeAndConstructionBusiness",
     "name": "Mesa Pool Removal Specialists",
     "image": "https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000",
-    "@id": "https://mesapoolremoval.com",
+    "@id": "https://mesapoolremoval.com/#business",
     "url": "https://mesapoolremoval.com",
-    "telephone": "(480) 555-XXXX",
+
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
@@ -38,17 +38,54 @@ export default function LocalBusinessSchema() {
     "areaServed": [
       {
         "@type": "City",
-        "name": "Mesa"
+        "name": "Mesa",
+        "sameAs": "https://www.wikidata.org/wiki/Q156743"
       },
       {
         "@type": "City",
-        "name": "Gilbert"
+        "name": "Gilbert",
+        "sameAs": "https://www.wikidata.org/wiki/Q927361"
       },
       {
         "@type": "City",
-        "name": "Chandler"
+        "name": "Chandler",
+        "sameAs": "https://www.wikidata.org/wiki/Q492577"
+      },
+      {
+        "@type": "Place",
+        "name": "San Tan Valley",
+        "sameAs": "https://www.wikidata.org/wiki/Q2571216"
+      },
+      {
+        "@type": "City",
+        "name": "Queen Creek",
+        "sameAs": "https://www.wikidata.org/wiki/Q38644"
       }
     ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pool Removal Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Pool Removal",
+            "description": "Complete removal of pool shell, debris haul-off, and engineered compaction backfill.",
+            "sameAs": "https://www.wikidata.org/wiki/Q1151322"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Caliche Soil Excavation",
+            "description": "Specialized heavy equipment excavation through Arizona caliche layers.",
+            "sameAs": "https://www.wikidata.org/wiki/Q1026666"
+          }
+        }
+      ]
+    },
     "description": "Professional pool demolition, caliche excavation, and engineered backfilling in Mesa, Arizona."
   };
 

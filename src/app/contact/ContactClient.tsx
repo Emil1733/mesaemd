@@ -103,9 +103,8 @@ export default function ContactClient() {
 
               {/* 5. PHONE CTA */}
               <div style={{ background: 'rgba(255,255,255,0.05)', padding: '2rem', borderLeft: '4px solid var(--accent-primary)' }}>
-                <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Prefer to Talk?</h3>
-                <p style={{ color: 'var(--text-inverse-muted)', marginBottom: '1rem' }}>Call now to speak directly with an East Valley pool demolition specialist.</p>
-                <a href="tel:4805550000" style={{ color: 'var(--accent-primary)', fontSize: '2rem', fontWeight: 900, fontFamily: 'var(--font-heading)' }}>📞 (480) 555-XXXX</a>
+                <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Ready for a Quote?</h3>
+                <p style={{ color: 'var(--text-inverse-muted)', marginBottom: '1rem' }}>Use the calculator to the right for an instant price range and timeline estimate.</p>
               </div>
             </div>
 
