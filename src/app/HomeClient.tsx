@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './page.module.css';
 import { supabase } from '../lib/supabase';
 
@@ -106,7 +107,7 @@ export default function HomeClient() {
 
             <ul className={styles.trustBullets}>
               <li>Licensed & insured in Arizona</li>
-              <li>Maricopa County permit handling</li>
+              <li><Link href="/maricopa-county-pool-removal-permit" style={{ color: 'inherit', textDecoration: 'underline' }}>Maricopa County permit handling</Link></li>
               <li>Compaction-ready for future builds</li>
               <li>HOA & access-restricted property specialists</li>
             </ul>
@@ -191,7 +192,7 @@ export default function HomeClient() {
                 )}
 
                 <div className={styles.calcMicrocopy}>
-                  Most Mesa pools are concrete with caliche base — excavation can increase cost.
+                  Most Mesa pools are concrete with <Link href="/caliche-soil-pool-removal-mesa" style={{ textDecoration: 'underline', color: 'inherit' }}>caliche base</Link> — excavation can increase cost.
                 </div>
               </div>
             )}
@@ -233,9 +234,12 @@ export default function HomeClient() {
         <div className="container">
           <div className={styles.sectionHeader} style={{ textAlign: 'center', margin: '0 auto 4rem auto' }}>
             <h2 className={styles.sectionTitle}>Full Removal vs Partial Pool Fill-In in Mesa</h2>
-            <p className={styles.sectionDesc} style={{ fontWeight: 700, color: 'var(--accent-primary)' }}>
+            <p className={styles.sectionDesc} style={{ fontWeight: 700, color: 'var(--accent-primary)', marginBottom: '1rem' }}>
               In Arizona, partial removal is often referred to as "pool abandonment."
             </p>
+            <Link href="/full-vs-partial-pool-removal-arizona" style={{ color: 'var(--text-muted)', textDecoration: 'underline', fontWeight: 'bold' }}>
+              Read our full vs. partial cost & property value guide →
+            </Link>
           </div>
 
           <div className={styles.grid2}>
@@ -302,10 +306,10 @@ export default function HomeClient() {
           </div>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginBottom: '2rem' }}>
-            <span className={styles.neighborhoodTag}>Eastmark</span>
-            <span className={styles.neighborhoodTag}>Las Sendas</span>
-            <span className={styles.neighborhoodTag}>Dobson Ranch</span>
-            <span className={styles.neighborhoodTag}>Red Mountain Ranch</span>
+            <Link href="/mesa/eastmark-pool-removal"><span className={styles.neighborhoodTag}>Eastmark</span></Link>
+            <Link href="/mesa/las-sendas-pool-removal"><span className={styles.neighborhoodTag}>Las Sendas</span></Link>
+            <Link href="/mesa/dobson-ranch-pool-removal"><span className={styles.neighborhoodTag}>Dobson Ranch</span></Link>
+            <Link href="/mesa/red-mountain-ranch-pool-removal"><span className={styles.neighborhoodTag}>Red Mountain Ranch</span></Link>
             <span className={styles.neighborhoodTag}>Alta Mesa</span>
           </div>
           
@@ -380,7 +384,7 @@ export default function HomeClient() {
             </ul>
             
             <div style={{ background: 'var(--accent-primary)', color: '#fff', padding: '1.5rem', fontWeight: 900, textTransform: 'uppercase', textAlign: 'center' }}>
-              We handle all permit coordination for Mesa and Maricopa County.
+              <Link href="/maricopa-county-pool-removal-permit" style={{ color: '#fff', textDecoration: 'none' }}>We handle all permit coordination for Mesa and Maricopa County. Learn more →</Link>
             </div>
           </div>
         </div>
