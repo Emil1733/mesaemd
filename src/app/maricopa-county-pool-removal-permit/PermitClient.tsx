@@ -108,7 +108,7 @@ export default function PermitClient() {
               <span className={styles.sectionLabel}>Mandatory Compliance</span>
               <h2 className={styles.sectionTitle}>The Legal Requirements for Pool Demolition</h2>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginTop: '1.5rem' }}>
-                Per current Arizona Building Codes and Maricopa County Environmental Health standards, <strong>swimming pool demolition is a regulated activity.</strong> It is not simply &ldquo;filling in a hole.&rdquo; 
+                Per current Arizona Building Codes and Maricopa County Environmental Health standards, swimming pool demolition is a regulated activity. If you are looking for actual <Link href="/" style={{ color: 'var(--accent-primary)', fontWeight: 'bold', textDecoration: 'underline' }}>Mesa pool demolition services</Link> or need a <Link href="/" style={{ color: 'var(--accent-primary)', fontWeight: 'bold', textDecoration: 'underline' }}>swimming pool removal Mesa</Link> quote, return to our main service page. This guide specifically covers the legal permit processes.
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginTop: '1rem' }}>
                 Failure to obtain the proper permits can result in:

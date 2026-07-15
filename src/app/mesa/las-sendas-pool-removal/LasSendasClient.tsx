@@ -322,6 +322,23 @@ export default function LasSendasClient() {
         </div>
       </section>
 
+      
+      {/* NEIGHBORHOOD CROSS-LINKS */}
+      <section className={styles.section} style={{ background: 'var(--bg-light)', borderTop: '1px solid var(--border-light)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Other East Valley Service Areas</h2>
+            <p style={{ color: 'var(--text-muted)' }}>Explore our specific expertise in other Mesa neighborhoods:</p>
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
+            <Link href="/mesa/eastmark-pool-removal"><span className={styles.neighborhoodTag || "badge"}>Eastmark</span></Link>
+            <Link href="/mesa/las-sendas-pool-removal"><span className={styles.neighborhoodTag || "badge"}>Las Sendas</span></Link>
+            <Link href="/mesa/dobson-ranch-pool-removal"><span className={styles.neighborhoodTag || "badge"}>Dobson Ranch</span></Link>
+            <Link href="/mesa/red-mountain-ranch-pool-removal"><span className={styles.neighborhoodTag || "badge"}>Red Mountain Ranch</span></Link>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className={`${styles.section} bg-hazard`} style={{ textAlign: 'center', padding: '6rem 0' }}>
         <div className="container">

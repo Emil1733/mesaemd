@@ -229,6 +229,24 @@ export default function HomeClient() {
         </div>
       </section>
 
+      {/* 3.5 GEO-PAYLOAD SECTION: MESA SPECIFIC AUTHORITY */}
+      <section className={`${styles.section}`} style={{ background: '#fff', borderTop: '1px solid var(--border-light)' }}>
+        <div className="container">
+          <div className={styles.sectionHeader} style={{ textAlign: 'center', margin: '0 auto 4rem auto', maxWidth: '900px' }}>
+            <h2 className={styles.sectionTitle}>Comprehensive Swimming Pool Removal in Mesa, AZ</h2>
+            <p className={styles.sectionDesc} style={{ color: 'var(--text-main)', textAlign: 'left', marginTop: '2rem' }}>
+              Executing a successful <strong>pool demolition in Mesa</strong> goes far beyond simply draining the water and filling the hole with dirt. The East Valley sits on complex geological structures, most notably the <Link href="/caliche-soil-pool-removal-mesa" style={{ color: 'var(--accent-primary)', fontWeight: 'bold' }}>caliche hardpan</Link>. Whether you reside in the 85209 zip code near Eastmark or the older, established neighborhoods in 85202 around Dobson Ranch, you need a contractor who understands the extreme compaction requirements necessary to prevent future sinkholes.
+            </p>
+            <p className={styles.sectionDesc} style={{ color: 'var(--text-main)', textAlign: 'left', marginTop: '1rem' }}>
+              <strong>Swimming pool removal in Mesa</strong> requires a careful approach to Homeowner Association (HOA) regulations, strict adherence to City of Mesa noise ordinances, and precise heavy equipment access. Often, properties in Las Sendas (85207) or Red Mountain Ranch (85215) feature tight alleyways or elevated grading. We utilize specialized mini-excavators and hydraulic breakers to safely dismantle concrete and fiberglass shells without damaging your existing hardscaping, block walls, or underground utilities.
+            </p>
+            <p className={styles.sectionDesc} style={{ color: 'var(--text-main)', textAlign: 'left', marginTop: '1rem' }}>
+              Furthermore, Maricopa County Environmental Health mandates strict protocols to ensure vector control (preventing mosquito breeding) before backfilling. Because we handle 100% of the <Link href="/maricopa-county-pool-removal-permit" style={{ color: 'var(--accent-primary)', fontWeight: 'bold' }}>Mesa pool removal permit process</Link>, you never have to worry about failed city inspections, title clouds, or fines. When we complete your pool demolition, your yard is returned to a blank canvas, fully engineered and compacted to support future structures, landscaping, or artificial turf.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 4. SERVICE TYPES SECTION */}
       <section className={`${styles.section} ${styles.sectionLight}`}>
         <div className="container">

@@ -4,6 +4,7 @@ import EastmarkClient from './EastmarkClient';
 export const metadata: Metadata = {
   title: "Eastmark Pool Removal Mesa AZ | Remove Builder Pool for Custom Backyard",
   description: "Removing a builder-grade pool in Eastmark to reclaim your yard? We handle Eastmark HOA compliance, clay soil backfill, and complete compaction for future builds.",
+  alternates: { canonical: '/mesa/eastmark-pool-removal' },
 };
 
 export default function EastmarkPage() {
