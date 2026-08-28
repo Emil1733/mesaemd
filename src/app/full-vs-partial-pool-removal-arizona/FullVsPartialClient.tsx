@@ -44,14 +44,14 @@ export default function FullVsPartialClient() {
       {/* HERO SECTION */}
       <section className={styles.hero} style={{ minHeight: '60vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="Full vs Partial Pool Removal demonstration in Arizona"
           fill
           priority
           className={styles.heroBg}
           style={{ opacity: 0.25, objectFit: 'cover' }}
         />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem', paddingBottom: '4rem' }}>
           <div style={{ maxWidth: '850px' }}>
             <div style={{ display: 'inline-block', background: 'var(--accent-primary)', color: '#000', padding: '0.4rem 1rem', fontWeight: 900, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1.5rem' }}>
               Decision Guide · Arizona
@@ -171,8 +171,8 @@ export default function FullVsPartialClient() {
                   </div>
                   <input type="text" placeholder="Your Name" className={styles.formInput} required value={formState.name} onChange={e => setFormState({ ...formState, name: e.target.value })} />
                   <input type="tel" placeholder="Phone Number" className={styles.formInput} required value={formState.phone} onChange={e => setFormState({ ...formState, phone: e.target.value })} />
-                  <button type="submit" className="btn btn-dark" style={{ width: '100%', padding: '1rem' }}>
-                    Request {activeView === 'partial' ? 'Partial' : 'Full'} Consultation
+                  <button type="submit" disabled={isSubmitting} className="btn btn-dark" style={{ width: '100%', padding: '1rem', opacity: isSubmitting ? 0.7 : 1 }}>
+                    {isSubmitting ? 'Submitting...' : `Request ${activeView === 'partial' ? 'Partial' : 'Full'} Consultation`}
                   </button>
                 </form>
               )}
@@ -252,3 +252,4 @@ export default function FullVsPartialClient() {
     </main>
   );
 }
+

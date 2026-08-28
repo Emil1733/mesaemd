@@ -73,7 +73,7 @@ export default function ContactClient() {
       {/* 1. HERO & PRIMARY FORM - Above the fold */}
       <section className={styles.hero} style={{ minHeight: '85vh', alignContent: 'center', background: '#0a0a0a', borderBottom: '8px solid var(--accent-primary)' }}>
         <Image 
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero_pool_demolition.jpg" 
           alt="Heavy machinery excavation" 
           fill
           priority
@@ -81,7 +81,7 @@ export default function ContactClient() {
           sizes="100vw"
           style={{ opacity: 0.15, filter: 'grayscale(100%)', objectFit: 'cover' }}
         />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '6rem', paddingBottom: '4rem' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem', paddingBottom: '4rem' }}>
           
           <div className={styles.grid2} style={{ alignItems: 'flex-start' }}>
             
@@ -292,3 +292,4 @@ export default function ContactClient() {
     </main>
   );
 }
+

@@ -25,6 +25,15 @@ export default function Footer() {
           <Link href="/full-vs-partial-pool-removal-arizona" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Full vs. Partial</Link>
           <Link href="/maricopa-county-pool-removal-permit" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Permit Guide</Link>
         </div>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '1rem', flexWrap: 'wrap', borderTop: '1px solid #1f2937', paddingTop: '1.5rem' }}>
+          <Link href="/service-areas/phoenix-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Phoenix</Link>
+          <Link href="/service-areas/scottsdale-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Scottsdale</Link>
+          <Link href="/service-areas/tempe-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Tempe</Link>
+          <Link href="/service-areas/gilbert-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Gilbert</Link>
+          <Link href="/service-areas/chandler-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Chandler</Link>
+          <Link href="/service-areas/queen-creek-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>Queen Creek</Link>
+          <Link href="/service-areas/san-tan-valley-pool-removal" style={{ color: '#6b7280', fontWeight: 600, fontSize: '0.85rem' }}>San Tan Valley</Link>
+        </div>
         <div style={{ marginTop: '3rem', borderTop: '1px solid #374151', paddingTop: '2rem' }}>
           <p style={{ fontSize: '0.875rem' }}>Licensed, Bonded, and Insured in Arizona.</p>
         </div>

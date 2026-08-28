@@ -49,14 +49,14 @@ export default function ServiceAreaClient() {
       {/* HERO SECTION */}
       <section className={styles.hero} style={{ minHeight: '50vh', background: '#0a0a0a' }}>
         <Image 
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero_pool_demolition.jpg" 
           alt="Heavy machinery serving the East Valley" 
           fill
           priority
           className={styles.heroBg}
           style={{ opacity: 0.2, objectFit: 'cover' }}
         />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '6rem' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem' }}>
           <h1 className={styles.heroTitle} style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
             Areas We Serve Across <span style={{ color: 'var(--accent-primary)' }}>Arizona</span>
           </h1>
@@ -161,3 +161,4 @@ export default function ServiceAreaClient() {
     </main>
   );
 }
+

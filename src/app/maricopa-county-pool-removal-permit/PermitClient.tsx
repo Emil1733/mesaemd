@@ -43,14 +43,14 @@ export default function PermitClient() {
       {/* HERO SECTION */}
       <section className={styles.hero} style={{ minHeight: '55vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="Official construction permits and blueprints for Arizona pool removal"
           fill
           priority
           className={styles.heroBg}
           style={{ opacity: 0.25, objectFit: 'cover' }}
         />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem', paddingBottom: '4rem' }}>
           <div className={styles.heroGrid}>
             <div className="fade-in">
               <div style={{ display: 'inline-block', background: 'var(--accent-secondary)', color: '#000', padding: '0.4rem 1rem', fontWeight: 900, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1.5rem' }}>
@@ -220,3 +220,4 @@ export default function PermitClient() {
     </main>
   );
 }
+

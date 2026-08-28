@@ -14,6 +14,10 @@ async function checkIndexStatus() {
 
   const searchconsole = google.searchconsole({ version: 'v1', auth: await auth.getClient() });
 
+  const sites = await searchconsole.sites.list();
+  const siteList = sites.data.siteEntry.map(s => s.siteUrl);
+  const targetSite = siteList.find(s => s.includes('mesapoolremoval.com')) || SITE_URL;
+
   const urlsToCheck = [
     'https://mesapoolremoval.com/',
     'https://mesapoolremoval.com/maricopa-county-pool-removal-permit',
@@ -29,7 +33,7 @@ async function checkIndexStatus() {
       const res = await searchconsole.urlInspection.index.inspect({
         requestBody: {
           inspectionUrl: url,
-          siteUrl: SITE_URL,
+          siteUrl: targetSite,
           languageCode: 'en-US'
         }
       });

@@ -85,7 +85,7 @@ export default function HomeClient() {
       {/* 1. HERO SECTION (ABOVE THE FOLD) */}
       <section className={styles.hero}>
         <Image 
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero_pool_demolition.jpg" 
           alt="Heavy machinery excavation in Mesa Arizona" 
           fill
           priority

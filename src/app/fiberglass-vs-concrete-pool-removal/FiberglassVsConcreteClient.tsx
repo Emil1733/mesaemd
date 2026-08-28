@@ -14,7 +14,6 @@ export default function FiberglassVsConcreteClient() {
     name: '',
     phone: '',
   });
-  const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
@@ -46,14 +45,14 @@ export default function FiberglassVsConcreteClient() {
       {/* HERO SECTION */}
       <section className={styles.hero} style={{ minHeight: '60vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="Concrete and Fiberglass pool materials comparison in Mesa Arizona"
           fill
           priority
           className={styles.heroBg}
           style={{ opacity: 0.25, objectFit: 'cover' }}
         />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem', paddingBottom: '4rem' }}>
           <div style={{ maxWidth: '850px' }}>
             <div style={{ display: 'inline-block', background: 'var(--accent-primary)', color: '#000', padding: '0.4rem 1rem', fontWeight: 900, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1.5rem' }}>
               Material Comparison · Mesa, AZ
@@ -196,8 +195,8 @@ export default function FiberglassVsConcreteClient() {
                     value={formState.phone}
                     onChange={e => setFormState({ ...formState, phone: e.target.value })}
                   />
-                  <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '1rem' }}>
-                    Request {activeTab === 'concrete' ? 'Concrete' : 'Fiberglass'} Pricing
+                  <button type="submit" disabled={isSubmitting} className="btn btn-primary" style={{ width: '100%', padding: '1rem', opacity: isSubmitting ? 0.7 : 1 }}>
+                    {isSubmitting ? 'Submitting...' : `Request ${activeTab === 'concrete' ? 'Concrete' : 'Fiberglass'} Pricing`}
                   </button>
                 </form>
               )}
@@ -268,3 +267,4 @@ export default function FiberglassVsConcreteClient() {
     </main>
   );
 }
+

@@ -67,7 +67,7 @@ export default function RedMountainClient() {
       {/* HERO SECTION */}
       <section className={styles.hero} style={{ minHeight: '65vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="High-altitude desert backyard in Red Mountain Ranch Mesa"
           fill
           priority

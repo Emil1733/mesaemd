@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from '../../page.module.css';
 
 export default function CostClient() {
@@ -39,7 +38,7 @@ export default function CostClient() {
       {/* 1 & 2. HERO & IMMEDIATE VALUE */}
       <section className={styles.hero} style={{ minHeight: '75vh', borderBottom: '8px solid var(--accent-primary)' }}>
         <Image 
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero_pool_demolition.jpg" 
           alt="Heavy machinery excavation" 
           fill
           priority
@@ -47,7 +46,7 @@ export default function CostClient() {
           sizes="100vw"
           style={{ opacity: 0.15, filter: 'grayscale(100%)', objectFit: 'cover' }}
         />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '8rem', paddingBottom: '4rem' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem', paddingBottom: '4rem' }}>
           
           <div className={styles.grid2} style={{ alignItems: 'flex-start' }}>
             
@@ -327,3 +326,4 @@ export default function CostClient() {
     </main>
   );
 }
+

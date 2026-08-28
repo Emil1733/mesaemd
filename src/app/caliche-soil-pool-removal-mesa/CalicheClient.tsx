@@ -20,8 +20,8 @@ export default function CalicheClient() {
     e.preventDefault();
     let surchargeMin = 0;
     let surchargeMax = 0;
-    let baseCost = poolSize === 'Small' ? 10000 : poolSize === 'Medium' ? 14000 : 19000;
-    let baseCostMax = poolSize === 'Small' ? 13000 : poolSize === 'Medium' ? 18000 : 24000;
+    const baseCost = poolSize === 'Small' ? 10000 : poolSize === 'Medium' ? 14000 : 19000;
+    const baseCostMax = poolSize === 'Small' ? 13000 : poolSize === 'Medium' ? 18000 : 24000;
     let extraDays = '';
 
     if (grade === 'Grade 1 — Soft Caliche') {
@@ -68,7 +68,7 @@ export default function CalicheClient() {
       {/* HERO */}
       <section className={styles.hero} style={{ minHeight: '65vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="Hydraulic rock breaker excavating through caliche bedrock in Mesa Arizona"
           fill
           priority

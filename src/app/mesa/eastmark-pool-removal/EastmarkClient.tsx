@@ -76,7 +76,7 @@ export default function EastmarkClient() {
       {/* HERO + CALCULATOR */}
       <section className={styles.hero} style={{ minHeight: '70vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="Modern backyard transformation after pool removal in Eastmark Mesa Arizona"
           fill
           priority

@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Mesa Pool Removal Specialists",
-    "image": "https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000",
+    "image": "https://mesapoolremoval.com/hero_pool_demolition.jpg",
     "@id": "https://mesapoolremoval.com/#business",
     "url": "https://mesapoolremoval.com",
 

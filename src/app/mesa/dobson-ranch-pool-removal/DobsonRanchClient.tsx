@@ -76,7 +76,7 @@ export default function DobsonRanchClient() {
       {/* HERO + CALCULATOR */}
       <section className={styles.hero} style={{ minHeight: '70vh', background: '#0a0a0a' }}>
         <Image
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000"
+          src="/hero_pool_demolition.jpg"
           alt="Concrete pool demolition in Dobson Ranch Mesa Arizona"
           fill
           priority

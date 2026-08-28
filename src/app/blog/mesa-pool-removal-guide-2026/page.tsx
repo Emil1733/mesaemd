@@ -14,7 +14,7 @@ export default function BlogPost() {
       {/* 1. HERO - BLOG ARTICLE */ }
       <section className={styles.hero} style={{ minHeight: '50vh' }}>
         <Image 
-          src="https://images.unsplash.com/photo-1541888062831-29177a644265?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero_pool_demolition.jpg" 
           alt="Mesa Pool Demolition Guide" 
           fill
           priority
@@ -24,7 +24,7 @@ export default function BlogPost() {
         />
         <div className={styles.heroOverlay} style={{ background: 'linear-gradient(180deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,1) 100%)' }}></div>
         
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '8rem', paddingBottom: '4rem', textAlign: 'center', maxWidth: '900px' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: '2rem', paddingBottom: '4rem', textAlign: 'center', maxWidth: '900px' }}>
           <div className={styles.heroTag} style={{ marginBottom: '1rem', background: 'var(--bg-dark)', border: '1px solid var(--accent-primary)' }}>Authority Guide</div>
           <h1 className={styles.heroTitle} style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
             The Complete Guide to Pool Removal in Mesa (2026)
@@ -36,7 +36,7 @@ export default function BlogPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className={styles.section} style={{ paddingTop: '4rem' }}>
+      <section className={styles.section} style={{ paddingTop: '2rem' }}>
         <article className="container" style={{ maxWidth: '800px', background: 'var(--bg-card)', padding: '4rem', borderRadius: '4px', borderTop: '8px solid var(--accent-primary)', boxShadow: 'var(--shadow-heavy)', color: 'var(--text-main)', fontSize: '1.125rem', lineHeight: '1.8' }}>
           
           {/* 2. INTRO */}
@@ -167,3 +167,4 @@ export default function BlogPost() {
     </main>
   );
 }
+

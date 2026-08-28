@@ -56,7 +56,7 @@ export default function PoolRemovalClient() {
       {/* 1. HERO SECTION & 2. CTA STRIP */}
       <section className={styles.hero} style={{ minHeight: '60vh' }}>
         <Image 
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero_pool_demolition.jpg" 
           alt="Technical Pool Demolition Site" 
           fill
           priority
