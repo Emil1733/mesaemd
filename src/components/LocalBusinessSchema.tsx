@@ -8,11 +8,9 @@ export default function LocalBusinessSchema() {
     "image": "https://mesapoolremoval.com/hero_pool_demolition.jpg",
     "@id": "https://mesapoolremoval.com/#business",
     "url": "https://mesapoolremoval.com",
-
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Serving Mesa Subdivisions",
       "addressLocality": "Mesa",
       "addressRegion": "AZ",
       "postalCode": "85201",
