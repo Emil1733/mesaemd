@@ -18,12 +18,12 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mesapoolremoval.com'),
-  title: "Mesa Pool Removal | Concrete & Fiberglass Demolition",
-  description:
-    "Expert pool removal in Mesa, AZ. Specializing in tight access, caliche soil excavation, and engineered compaction for a stable, usable yard. Request an estimate.",
-  category: "service",
-  keywords: ["Mesa pool removal", "swimming pool demolition Arizona", "caliche excavation Mesa", "pool fill-in cost Mesa", "East Valley pool removal"],
-  authors: [{ name: "Mesa Pool Removal Specialists" }],
+  title: {
+    default: 'Mesa Pool Removal',
+    template: '%s',
+  },
+  description: 'Pool removal, demolition, fill-in, cost, permit, and excavation information for Mesa, Arizona and nearby East Valley service areas.',
+  category: 'service',
   robots: {
     index: true,
     follow: true,
@@ -36,12 +36,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Mesa Pool Removal Specialists",
-    description: "We handle full pool demolition, debris removal, and proper compaction in Mesa, AZ.",
-    url: "https://mesapoolremoval.com",
-    siteName: "Mesa Pool Removal",
-    locale: "en_US",
-    type: "website",
+    siteName: 'Mesa Pool Removal',
+    locale: 'en_US',
+    type: 'website',
   },
 };
 
