@@ -9,7 +9,7 @@ export default function Footer() {
         <p style={{ color: '#6b7280' }}>Serving Mesa & East Valley | Geotechnical Demolition Contractors</p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', margin: '2rem 0', flexWrap: 'wrap' }}>
-          <Link href="/pool-removal" style={{ color: 'var(--text-inverse-muted)', fontWeight: 700 }}>Services</Link>
+          <Link href="/" style={{ color: 'var(--text-inverse-muted)', fontWeight: 700 }}>Services</Link>
           <Link href="/service-areas" style={{ color: 'var(--text-inverse-muted)', fontWeight: 700 }}>Service Areas</Link>
           <Link href="/cost/mesa-pool-removal" style={{ color: 'var(--text-inverse-muted)', fontWeight: 700 }}>Cost Guide</Link>
           <Link href="/blog/mesa-pool-removal-guide-2026" style={{ color: 'var(--text-inverse-muted)', fontWeight: 700 }}>Mesa Blog</Link>

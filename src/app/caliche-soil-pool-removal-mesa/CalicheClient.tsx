@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../page.module.css';
+import { calicheFaqs } from '../../lib/caliche-faqs';
 import { supabase } from '../../lib/supabase';
 
 export default function CalicheClient() {
@@ -297,16 +298,10 @@ export default function CalicheClient() {
             Caliche & Pool Removal FAQ
           </h2>
           <p style={{ textAlign: 'center', color: 'var(--text-inverse-muted)', marginBottom: '3rem' }}>
-            These answers match our structured FAQ schema — eligible for Google rich snippet display.
+            Common questions about excavation conditions and project planning.
           </p>
           <div style={{ display: 'grid', gap: '2rem' }}>
-            {[
-              { q: 'What is caliche soil and why does it matter for pool removal in Mesa?', a: 'Caliche is a hardened layer of calcium carbonate that occurs naturally in desert soils across Arizona. In Mesa, it typically sits 2–6 feet below the surface. Standard excavator buckets cannot break through grade-3 caliche — hydraulic rock breakers are required, adding cost and time to pool removal projects.' },
-              { q: 'How much does caliche add to pool removal cost in Mesa?', a: 'Caliche soil surcharges in Mesa typically range from $3,500 to $8,500 depending on the caliche grade and pool perimeter. Grade-1 caliche (soft) adds $1,500–$3,000. Grade-3 caliche (hardpan) adds $5,500–$8,500+. Areas like Las Sendas and Red Mountain Ranch consistently encounter grade-3 hardpan.' },
-              { q: 'Which Mesa neighborhoods have the worst caliche?', a: 'The highest-grade caliche in Mesa is found in neighborhoods built on or near mountain foothills: Las Sendas (Usery Mountain), Red Mountain Ranch, and Alta Mesa. Central Mesa and Dobson Ranch typically encounter softer grade-1 or grade-2 caliche that requires less specialized equipment.' },
-              { q: 'Does caliche affect the backfill compaction after pool removal?', a: 'Yes. Caliche is non-expansive, which actually helps with backfill stability. However, broken caliche chunks must be properly compacted in lifts — loose caliche backfill will settle unevenly. We use moisture-controlled compaction in 8-inch layers to ensure 95% Proctor density, regardless of what was excavated.' },
-              { q: 'How do I know if my Mesa property has caliche?', a: 'The fastest indicator is your neighborhood. If you are in Las Sendas, Red Mountain Ranch, or any property abutting the Usery or Superstition mountain ranges, assume grade-2 to grade-3 caliche. For central and west Mesa, a site assessment with a hand probe will confirm caliche depth and grade before we finalize your quote.' },
-            ].map(item => (
+            {calicheFaqs.map(item => (
               <div key={item.q} style={{ borderBottom: '1px solid var(--border-dark)', paddingBottom: '1.5rem' }}>
                 <h3 style={{ color: 'var(--accent-primary)', fontSize: '1.05rem', marginBottom: '0.75rem' }}>{item.q}</h3>
                 <p style={{ color: 'var(--text-inverse-muted)', lineHeight: 1.7 }}>{item.a}</p>
